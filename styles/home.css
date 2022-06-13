@@ -1,1 +1,59 @@
-/* CSS for home page (index.html) */
+main {
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    grid-template-areas: 
+    'present-poll'
+    'past-polls'
+    ;
+}
+
+#present-poll {
+    grid-area: 'present-poll';
+}
+
+#past-polls {
+    grid-area: 'past-polls';
+}
+
+.poll.controls {
+    grid-template-areas: 
+        'poll-question  poll-question'
+        'answer-1   answer-2'
+        'answer1-add-vote   answer2-add-vote'
+        'answer1-remove-vote   answer2-remove-vote'
+        'end-poll-button   end-poll-button'
+    ;
+
+}
+
+.poll-question {
+    grid-area: poll-question;
+}
+
+.answer-1 {
+    grid-area: answer-1;
+}
+
+.answer-2 {
+    grid-area: answer-2;
+}
+
+.answer1-add-vote {
+    grid-area: answer1-add-vote;
+}
+
+.answer2-add-vote {
+    grid-area: answer2-add-vote;
+}
+
+.answer1-remove-vote {
+    grid-area: answer1-remove-vote;
+}
+
+.answer2-remove-vote {
+    grid-area: answer2-remove-vote;
+}
+
+.end-poll-button {
+    grid-area: end-poll-button;
+}
