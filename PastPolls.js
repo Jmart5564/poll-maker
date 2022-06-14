@@ -1,26 +1,30 @@
 export default function PastPolls(props) {
-    const game = props.game;
+    const poll = props.poll;
 
     const div = document.createElement('div');
-    div.classList.add('score-box');
+    div.classList.add('poll');
 
     const span1 = document.createElement('span');
-    span1.classList.value = 'team a';
-    span1.textContent = game.teamA.name;
+    span1.classList.value = 'saved-question';
+    span1.textContent = poll.question.name;
 
     const span2 = document.createElement('span');
-    span2.classList.value = 'score a';
-    span2.textContent = game.teamA.score;
+    span2.classList.value = 'saved-answerA';
+    span2.textContent = poll.answerA.name;
 
     const span3 = document.createElement('span');
-    span3.classList.value = 'team b';
-    span3.textContent = game.teamB.name;
+    span3.classList.value = 'saved-votesA';
+    span3.textContent = poll.answerA.votes;
 
     const span4 = document.createElement('span');
-    span4.classList.value = 'score b';
-    span4.textContent = game.teamB.score;
+    span4.classList.value = 'saved-answerB';
+    span4.textContent = poll.answerB.name;
 
-    div.append(span1, span2, span3, span4);
+    const span5 = document.createElement('span');
+    span5.classList.value = 'saved-votesB';
+    span5.textContent = poll.answerB.votes;
+
+    div.append(span1, span2, span3, span4, span5);
 
     return div;
 }
