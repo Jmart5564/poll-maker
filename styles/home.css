@@ -17,11 +17,10 @@ main {
 
 #active-poll {
     width: 250px;
-    height: 200px;
-    padding: 10px 5px;
-    background: rgb(83, 124, 83);
-    border: 3px solid black;
-    font-family:cursive;
+    padding: 15px;
+    background: rgb(39, 33, 21);
+    border: 1px solid rgb(100, 100, 59);
+    border-radius: 3px;
 }
 
 .poll.controls {
@@ -87,4 +86,52 @@ form {
     display: grid;
     gap: 5px;
     text-align: center;
+}
+
+#poll-votes-display {
+    width: 250px;
+    padding: 15px;
+    background: rgb(39, 33, 21);
+    border: 1px solid rgb(100, 100, 59);
+    border-radius: 3px;
+    gap: 10px;
+}
+
+
+.poll {
+    width: 250px;
+    padding: 15px;
+    background: rgb(39, 33, 21);
+    border: 1px solid rgb(100, 100, 59);
+    border-radius: 3px;
+    justify-items: center;
+    display: grid;
+    grid-template-areas: 
+    'saved-question saved-question'
+    'saved-answerA  saved-answerB'
+    'saved-votesA  saved-votesB';
+}
+
+.saved-question {
+    grid-area: saved-question;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.saved-answerA {
+    grid-area: saved-answerA;
+}
+
+.saved-answerB {
+    grid-area: saved-answerB;
+}
+
+.saved-votesA {
+    grid-area: saved-votesA;
+    padding-bottom: 15px;
+}
+
+.saved-votesB {
+    grid-area: saved-votesB;
+    padding-bottom: 15px;
 }
