@@ -4,7 +4,7 @@ export default function createVoteDisplay(root, dispatch) {
     const handleUnvote = dispatch.handleUnvote;
     const handleEndPoll = dispatch.handleEndPoll;
 
-    const [answerOneDisplay, answerTwoDisplay] = root.querySelectorAll('span');
+    const [questionDisplay, answerOneDisplay, answerTwoDisplay] = root.querySelectorAll('span');
     const [voteA, unvoteA, voteB, unvoteB, endPoll] = root.querySelectorAll('button');
 
     voteA.addEventListener('click', () => {
@@ -35,7 +35,7 @@ export default function createVoteDisplay(root, dispatch) {
         }
 
         root.classList.remove('hidden');
-
+        questionDisplay.textContent = poll.question;
         answerOneDisplay.textContent = poll.answerone.name;
         answerTwoDisplay.textContent = poll.answertwo.name;
     };

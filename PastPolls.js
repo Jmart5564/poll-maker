@@ -7,23 +7,23 @@ export default function PastPolls(props) {
 
     const span1 = document.createElement('span');
     span1.classList.value = 'saved-question';
-    span1.textContent = poll.question.name;
+    span1.textContent = poll.question;
 
     const span2 = document.createElement('span');
-    span2.classList.value = 'saved-answerA';
-    span2.textContent = poll.answerA.name;
+    span2.classList.value = 'saved-answerone';
+    span2.textContent = poll.answerone.name;
 
     const span3 = document.createElement('span');
     span3.classList.value = 'saved-votesA';
-    span3.textContent = poll.answerA.votes;
+    span3.textContent = poll.answerone.votes;
 
     const span4 = document.createElement('span');
     span4.classList.value = 'saved-answerB';
-    span4.textContent = poll.answerB.name;
+    span4.textContent = poll.answertwo.name;
 
     const span5 = document.createElement('span');
     span5.classList.value = 'saved-votesB';
-    span5.textContent = poll.answerB.votes;
+    span5.textContent = poll.answertwo.votes;
 
     div.append(span1, span2, span3, span4, span5);
 

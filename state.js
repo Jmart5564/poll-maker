@@ -16,8 +16,9 @@ initialize();
 export default state;
 
 // export dispatch functions that modify state
-export function newPoll(answer1, answer2) {
+export function newPoll(question, answer1, answer2) {
     state.poll = {
+        question,
         answerone: { name: answer1, votes: 0 },
         answertwo: { name: answer2, votes: 0 }
     };
