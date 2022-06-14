@@ -1,3 +1,4 @@
+// "ScoreBox"
 export default function PastPolls(props) {
     const poll = props.poll;
 

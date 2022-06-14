@@ -7,6 +7,8 @@ export function initialize() {
     // For example:
     // state.game = null;
     // state.pastGames = [];
+    state.poll = null;
+    state.pastPolls = [];
 }
 // call initialize
 initialize();
@@ -27,7 +29,7 @@ export function vote(answer) {
         state.poll.answerone.votes++;
     }
     if (answer === 'two') {
-        state.poll.ansertwo.votes++;
+        state.poll.answertwo.votes++;
     }
 }
 
@@ -41,6 +43,6 @@ export function unvote(answer) {
 }
 
 export function endPoll() {
-    state.pastpolls.push(state.poll);
+    state.pastPolls.push(state.poll);
     state.poll = null;
 }

@@ -1,3 +1,4 @@
+//NewGame.js
 export default function createNewPoll(root, handlers) {
     const handleNewPoll = handlers.handleNewPoll;
 
