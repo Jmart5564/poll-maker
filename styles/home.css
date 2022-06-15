@@ -1,1 +1,130 @@
-/* CSS for home page (index.html) */
+main {
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    grid-template-areas: 
+    'present-poll'
+    'past-polls'
+    ;
+}
+
+#new-poll {
+    
+}
+
+#present-poll {
+    grid-area: 'present-poll';
+}
+
+#past-polls {
+    grid-area: 'past-polls';
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+#active-poll {
+    width: 250px;
+}
+
+.poll.controls {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'poll-question       poll-question'
+        'answer-1            answer-2'
+        'answer1-add-vote    answer2-add-vote'
+        'answer1-remove-vote answer2-remove-vote'
+        'end-poll-button     end-poll-button'
+    ;
+
+}
+
+.poll.question {
+    grid-area: poll-question;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.answer.one {
+    grid-area: answer-1;
+    padding-top: 15px;
+}
+
+.answer.two {
+    grid-area: answer-2;
+    padding-top: 15px;
+}
+
+.answer1.add.vote {
+    grid-area: answer1-add-vote;
+}
+
+.answer2.add.vote {
+    grid-area: answer2-add-vote;
+}
+
+.answer1.remove.vote {
+    grid-area: answer1-remove-vote;
+}
+
+.answer2.remove.vote {
+    grid-area: answer2-remove-vote;
+}
+
+.end.poll.button {
+    grid-area: end-poll-button;
+}
+
+form {
+    width: 250px;
+    padding: 15px;
+    background: rgb(39, 33, 21);
+    border: 1px solid rgb(100, 100, 59);
+    border-radius: 3px;
+
+    display: grid;
+    gap: 5px;
+    text-align: center;
+}
+
+
+
+.poll {
+    width: 250px;
+    padding: 15px;
+    background: rgb(39, 33, 21);
+    border: 1px solid rgb(100, 100, 59);
+    border-radius: 3px;
+    justify-items: center;
+    display: grid;
+    grid-template-areas: 
+    'saved-question saved-question'
+    'saved-answerA  saved-answerB'
+    'saved-votesA  saved-votesB';
+}
+
+.saved-question {
+    grid-area: saved-question;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.saved-answerA {
+    grid-area: saved-answerA;
+}
+
+.saved-answerB {
+    grid-area: saved-answerB;
+}
+
+.saved-votesA {
+    grid-area: saved-votesA;
+    padding-bottom: 15px;
+}
+
+.saved-votesB {
+    grid-area: saved-votesB;
+    padding-bottom: 15px;
+}

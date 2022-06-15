@@ -1,3 +1,7 @@
+## Miro Board:
+
+https://miro.com/app/board/uXjVOtEnmzs=/?share_link_id=964932803177
+
 ## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁

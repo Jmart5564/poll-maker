@@ -15,10 +15,63 @@
 <body>
     <header>
         <img src="assets/html_css_js.png">
-        <h1>Web MVC UI</h1>
+        <h1>Poll Tracker App</h1>
     </header>
 
-    <main></main>
+    <main>
+        <section id="present-poll">
+            <section id="new-poll">
+                <form>
+                    <h2>Create a Poll</h2>
+                    <label>
+                        Question
+                        <input input required name="question">
+                    </label>
+                    <label>
+                        Answer 1
+                        <input input required name="answer-one-input">
+                    </label>
+                    <label>
+                        Answer 2
+                        <input input required name="answer-two-input">
+                    </label>
+                    <label>
+                        <button class="action">Start Poll!</button>
+                    </label>
+                </form>
+            </section>
+
+            <section id="poll-votes-display">
+            </section>
+
+            <section id="active-poll">
+                <div class="poll controls">
+                    <span class="poll question">Poll Question</span>
+                    <span class="answer one">Answer 1</span>
+                    <button class="answer1 add vote">+</button>
+                    <button class="answer1 remove vote">-</button>
+                    <span class="answer two">Answer 2</span>
+                    <button class="answer2 add vote">+</button>
+                    <button class="answer2 remove vote">-</button>
+                    <button class="end poll button">End Poll</button>
+                </div>
+            </section>
+        </section>
+
+        <section id="past-polls">
+            <h2>Past Polls</h2>
+            <div class="poll-container">
+                <div class="poll">
+                    <span class="saved-question"></span>
+                    <span class="saved-answerA"></span>
+                    <span class="saved-votesA"></span>
+                    <span class="saved-answerB"></span>
+                    <span class="saved-votesB"></span>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>&copy;2021 Aspiring Software Developer</footer>
 
