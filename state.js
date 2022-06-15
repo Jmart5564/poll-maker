@@ -10,12 +10,12 @@ export function initialize() {
     state.poll = null;
     state.pastPolls = [];
 }
-// call initialize
+
 initialize();
-// export state as primary (default) export
+
 export default state;
 
-// export dispatch functions that modify state
+
 export function newPoll(question, answer1, answer2) {
     state.poll = {
         question,

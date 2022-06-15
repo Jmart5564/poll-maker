@@ -7,20 +7,22 @@ main {
     ;
 }
 
+#new-poll {
+    
+}
+
 #present-poll {
     grid-area: 'present-poll';
 }
 
 #past-polls {
     grid-area: 'past-polls';
+    padding-bottom: 40px;
+    padding-left: 10px;
 }
 
 #active-poll {
     width: 250px;
-    padding: 15px;
-    background: rgb(39, 33, 21);
-    border: 1px solid rgb(100, 100, 59);
-    border-radius: 3px;
 }
 
 .poll.controls {
@@ -42,7 +44,6 @@ main {
 .poll.question {
     grid-area: poll-question;
     padding-bottom: 5px;
-    border-bottom: 3px solid black;
     font-size: 20px;
 }
 
@@ -88,14 +89,6 @@ form {
     text-align: center;
 }
 
-#poll-votes-display {
-    width: 250px;
-    padding: 15px;
-    background: rgb(39, 33, 21);
-    border: 1px solid rgb(100, 100, 59);
-    border-radius: 3px;
-    gap: 10px;
-}
 
 
 .poll {
