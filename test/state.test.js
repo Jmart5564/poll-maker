@@ -1,9 +1,9 @@
 import state, {
     initialize,
     newPoll,
-    vote,
-    unvote,
-    endPoll,
+   // vote,
+   // unvote,
+    //endPoll,
     // import dispatch functions
 } from '../state.js';
 
